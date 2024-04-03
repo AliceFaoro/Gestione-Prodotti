@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Elimina prodotto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+<style>
+	
+	body {
+		background-color: #ffe6ff;
+		text-align: center;
+		font-family: "Quicksand", sans-serif;
+	}
+	
+	form {
+		border: 5px solid purple;
+		border-radius: 10px;
+		width: 400px;
+		padding: 10px;
+		background-color: #f2e6ff;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#button {
+		background-color: purple;
+		color: white;
+		font-family: "Quicksand", sans-serif;
+	}
+	
+	a {
+		text-decoration: none;
+		color:white;
+	}
+	</style>
+
+</head>
+<body>
+
+	<form action="Remove" method="post">
+    
+	    <label for="nome">Inserisci il nome del prodotto da eliminare</label>
+	    <input type="text" name="nome">
+	     <br><br>
+	    <input type="submit" value="Rimuovi" id="button">
+	   
+	 </form>
+	 
+	 <br>
+
+	<button id="button"><a href="index.html">Torna Indietro</a></button>
+
+</body>
+</html>
