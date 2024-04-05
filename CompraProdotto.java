@@ -52,7 +52,7 @@ public class CompraProdotto extends HttpServlet {
 		String url = "jdbc:mysql://localhost:3306/"; 
 		String dbName = "newDB"; 
 		String user = "root";
-		String password = "Topolino.16"; 
+		String password = "*****"; 
 
 		String[] ordiniSelezionati = request.getParameterValues("ordini");
 		request.setAttribute("ordine", ordiniSelezionati);
@@ -130,7 +130,7 @@ public class CompraProdotto extends HttpServlet {
         //Qui viene richiesta l'autenticazione utilizzando l'indirizzo email e la password forniti.
         Session session = Session.getInstance(props, new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("alicefaoro@live.it", "IDragons!16"); // Inserisci qui il tuo indirizzo email e la tua password di Outlook
+                return new PasswordAuthentication("alicefaoro@live.it", "******); // Inserisci qui il tuo indirizzo email e la tua password di Outlook
             }
         });
 
